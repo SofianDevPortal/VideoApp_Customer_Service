@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SG Virtual Service Connect</title>
+
+    <!-- CDNs, Font Awesome and CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/customer_service.css">
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <p class="banner-text">SG Virtual Service Connect - Issue Request</p>
+    </div>
+
+    <p class="description"> Please select the issue location and the problem regarding it. This will be useful for the support staff to assist you quickly.</p>
+
+    <div class="flex-container">
+
+        <div class="flex-child issue">
+            <h2>Issue Location</h2>
+    
+            <div class="select-box">
+                <div class="selected">
+                    Select Issue Location/Source
+                </div>
+                <div class="options-container">
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="bathroom"
+                            name="category"
+                        />
+                        <label for="bathroom">Bathroom</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="kitchen"
+                            name="category"
+                        />
+                        <label for="kitchen">Kitchen</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="electric"
+                            name="category"
+                        />
+                        <label for="electric">Electrical Fittings</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="electronic"
+                            name="category"
+                        />
+                        <label for="electronic">Electronic Items</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="ac"
+                            name="category"
+                        />
+                        <label for="ac">Air Conditioning</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="wall"
+                            name="category"
+                        />
+                        <label for="wall">House Walls/Wooden Items</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-child problem">
+            <h2>Problem</h2>
+            <div class="select-box">
+                <div class="selected">
+                    Select Problem
+                </div>
+                <div class="options-container">
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="cooling"
+                            name="category"
+                        />
+                        <label for="cooling">Cooling</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="lighting"
+                            name="category"
+                        />
+                        <label for="lighting">Lighting</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="sink"
+                            name="category"
+                        />
+                        <label for="sink">Bathroom/Kitchen Sink</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="heating"
+                            name="category"
+                        />
+                        <label for="heating">Heating</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="switch"
+                            name="category"
+                        />
+                        <label for="switch">Switch</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="oven"
+                            name="category"
+                        />
+                        <label for="oven">Kitchen Stove/Oven</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="pc"
+                            name="category"
+                        />
+                        <label for="pc">PC/MAC repair</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="water-heat"
+                            name="category"
+                        />
+                        <label for="water-heat">Water Heating</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="paint"
+                            name="category"
+                        />
+                        <label for="paint">Paint</label>
+                    </div>
+                    <div class="option">
+                        <input
+                            type="radio"
+                            class="radio"
+                            id="faucet"
+                            name="category"
+                        />
+                        <label for="faucet">Bathroom/Kitchen faucet</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+    <button type="button" class="proceed" onclick="onClickVideo()" disabled>Proceed to Video Call</button>
+    <h4 style="margin-top: 20px; padding: 8px 20px;">Channel Names:</h4>
+    <p class="description">Please use (or CTRL C+V) the following channel names given in quotation marks in the video chat session to connect to your required issue staff</p>
+    <ul>'Carpenter': Walls, wood or any construction related queries and issues</ul>
+    <ul>'Plumber': Bathroom fittings, faucets, or any water heating issues</ul>
+    <ul>'Electrician': Any electrical fittings, switches, lights</ul>
+    <ul>'IT technician': PC/MAC/software/hardware issues</ul>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <script src="../js/customer-service.js"></script>
+</body>
+
