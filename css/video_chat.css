@@ -1,0 +1,69 @@
+.banner {
+    background-color: #d40c2d;
+    color: white;
+}
+
+.banner-text {
+    padding: 8px 20px;
+    margin: 0;
+}
+
+.player {
+    position: relative;
+    left: -20px;
+    top: 10px;
+    width: 640px;
+    height: 360px;
+}
+
+
+.player-remote {
+    position: relative;
+    left: -15px;
+    top: -22px;
+    width: 640px;
+    height: 360px;
+}
+
+.player-name {
+    position: relative;
+    top: -14px;
+    left: -5px;
+    margin: 8px 0;
+}
+
+@media (max-width: 640px) {
+    .player {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+.btn-agora {
+    background-color: #d40c2d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-agora:hover {
+    background-color: #6b0e1d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.row-video-group {
+    display: flex;
+}
+
+.w-100 {
+    display: flex;
+}
+
+.col {
+    margin-left: 5px;
+    float: 33.33%;
+}
